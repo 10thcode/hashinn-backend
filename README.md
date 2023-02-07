@@ -3,7 +3,7 @@
 	VERSION: v.1.0
 	BY: Atta Badu Kwabena
 	
-#ABOUT THIS PROJECT
+# ABOUT THIS PROJECT
 This is a simple news and social media web app. 
 Users can use this app to share their thoughts
 on latest and trending stories around the world.

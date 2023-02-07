@@ -1,24 +1,25 @@
-DOCUMENTATION
+#DOCUMENTATION
+
 	VERSION: v.1.0
 	BY: Atta Badu Kwabena
 	
-ABOUT THIS PROJECT
-	PROJECT NAME: HashInn
-	This is a simple news and social media web app. 
-	Users can use this app to share their thoughts
-	on latest and trending stories around the world.
+#ABOUT THIS PROJECT
+This is a simple news and social media web app. 
+Users can use this app to share their thoughts
+on latest and trending stories around the world.
 
+	PROJECT NAME: HashInn
 		
-FUNCTIONALITY
-	This project is divided into multiple apps. 
-	Each app has it own functionality, 
-	but all the apps interact with each other 
-	to provide an overall functionality of the 
-	web application. Each app is responsible 
-	for creating the required database tables/models, 
-	retrieving and inserting data in the database table, 
-	and converting/serializing data from the database tables
-	into JSON format.
+#FUNCTIONALITY
+This project is divided into multiple apps. 
+Each app has it own functionality, 
+but all the apps interact with each other 
+to provide an overall functionality of the 
+web application. Each app is responsible 
+for creating the required database tables/models, 
+retrieving and inserting data in the database table, 
+and converting/serializing data from the database tables
+into JSON format.
 	
 	APPS
 		Posts: An app for creating, viewing and 
@@ -35,7 +36,8 @@ FUNCTIONALITY
 		Chats: An app for managing private conversation 
 		between users.
 
-DATABASE MODELS/TABLES
+#DATABASE MODELS/TABLES
+
 	Profile: Stores user related data.
 		first_name
 		last_name
@@ -76,8 +78,8 @@ DATABASE MODELS/TABLES
 		posted_at
 		modified_at
 
+#API END POINTS AND EXPECTED RESPONSE
 
-API END POINTS AND EXPECTED RESPONSE
 	GET api/posts/id
 	{
 		url,
@@ -189,7 +191,7 @@ API END POINTS AND EXPECTED RESPONSE
 		]
 	}
 
-GET /profile 
+	GET /profile 
 	{
 		url
 		first_name,

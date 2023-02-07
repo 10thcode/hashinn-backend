@@ -18,7 +18,7 @@ class ProfileReadSerializer(serializers.HyperlinkedModelSerializer):
         fields = '__all__'
 
 
-class ProfileWriteSerializer(serializers.HyperlinkedModelSerializer):
+class ProfileWriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = '__all__'

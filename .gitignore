@@ -1,0 +1,9 @@
+# Ignoring python virtual environment
+venv/
+
+# Ignoring sqlite database file
+db.sqlite3
+
+# Ignoring python cache folder
+__pycache__/
+

@@ -1,4 +1,4 @@
-#DOCUMENTATION
+# DOCUMENTATION
 
 	VERSION: v.1.0
 	BY: Atta Badu Kwabena
@@ -10,7 +10,7 @@ on latest and trending stories around the world.
 
 	PROJECT NAME: HashInn
 		
-#FUNCTIONALITY
+# FUNCTIONALITY
 This project is divided into multiple apps. 
 Each app has it own functionality, 
 but all the apps interact with each other 
@@ -36,7 +36,7 @@ into JSON format.
 		Chats: An app for managing private conversation 
 		between users.
 
-#DATABASE MODELS/TABLES
+# DATABASE MODELS/TABLES
 
 	Profile: Stores user related data.
 		first_name
@@ -78,7 +78,7 @@ into JSON format.
 		posted_at
 		modified_at
 
-#API END POINTS AND EXPECTED RESPONSE
+# API ENDPOINTS
 
 	GET api/posts/id
 	{

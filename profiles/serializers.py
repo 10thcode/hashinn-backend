@@ -10,10 +10,15 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         fields = ['first_name', 'last_name', 'username']
 
 
-class ProfileSerializer(serializers.HyperlinkedModelSerializer):
+class ProfileReadSerializer(serializers.HyperlinkedModelSerializer):
     user = UserSerializer()
 
     class Meta:
         model = Profile
         fields = '__all__'
 
+
+class ProfileWriteSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Profile
+        fields = '__all__'

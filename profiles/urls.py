@@ -8,3 +8,4 @@ router = routers.DefaultRouter()
 router.register('profile', ProfileViewSet, basename='profile')
 
 urlpatterns = router.urls
+

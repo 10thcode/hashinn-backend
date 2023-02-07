@@ -1,10 +1,15 @@
 from rest_framework import viewsets
 
 from profiles.models import Profile
-from profiles.serializers import ProfileSerializer
+from profiles.serializers import ProfileReadSerializer, ProfileWriteSerializer
 
 
 class ProfileViewSet(viewsets.ModelViewSet):
     queryset = Profile.objects.all()
-    serializer_class = ProfileSerializer
+    
+    def get_serializer_class(self):
+        if self.action in ['list', 'retrieve']:
+            return ProfileReadSerializer
+        else:
+            return ProfileWriteSerializer
 

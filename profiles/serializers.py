@@ -4,21 +4,21 @@ from django.contrib.auth.models import User
 from profiles.models import Profile
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'username']
+        fields = ['first_name', 'last_name', 'username'] 
 
 
-class ProfileReadSerializer(serializers.HyperlinkedModelSerializer):
-    user = UserSerializer()
+class ProfileReadSerializer(serializers.ModelSerializer):
+    user = UserSerializer(read_only=True)
 
     class Meta:
         model = Profile
-        fields = '__all__'
-
+        fields = ['user', 'bio', 'image', 'created_at'] 
 
 class ProfileWriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = '__all__'
+        fields = ['user', 'bio', 'image', 'created_at'] 
+

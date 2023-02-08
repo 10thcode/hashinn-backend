@@ -5,7 +5,7 @@ from profiles.views import ProfileViewSet
 
 router = routers.DefaultRouter()
 
-router.register('profile', ProfileViewSet, basename='profile')
+router.register('users', ProfileViewSet)
 
 urlpatterns = router.urls
 

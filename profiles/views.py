@@ -6,12 +6,11 @@ from profiles.serializers import ProfileReadSerializer, ProfileWriteSerializer
 
 
 class ProfileViewSet(viewsets.ModelViewSet):
-    def get_queryset(self):
-        return Profile.objects.filter(id=self.request.user.id)
+    queryset = Profile.objects.all()
 
     def get_serializer_class(self):
         if self.action in ['list', 'retrieve']:
             return ProfileReadSerializer
         else:
             return ProfileWriteSerializer
-
+    
